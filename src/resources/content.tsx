@@ -4,12 +4,12 @@ import { Line, Row, Text } from "@once-ui-system/core";
 const person: Person = {
   firstName: "Akinsanmi",
   lastName: "Steven",
-  name: `Akin Steve`,
+  name: `Akinsanmi Steven`,
   role: "Design Engineer",
   avatar: "/images/avatar.jpeg",
-  email: "example@gmail.com",
+  email: "akinsanmisteve115@gmail.com",
   location: "Africa/Lagos", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "French"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["English"], // optional: Leave the array empty if you don't want to display languages
   locale: "en", // BCP 47 language tag for the HTML lang attribute, e.g., 'en', 'ja', 'zh-TW'
 };
 
@@ -61,27 +61,24 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>I build fast, polished interfaces for startups, on web and mobile.</>,
   featured: {
-    display: true,
-    title: (
-      <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
-        <Line background="brand-alpha-strong" vert height="20" />
-        <Text marginRight="4" onBackground="brand-medium">
-          Featured work
-        </Text>
-      </Row>
-    ),
-    href: "/work/building-once-ui-a-customizable-design-system",
-  },
+  display: true,
+  title: (
+    <Row gap="12" vertical="center">
+      <strong className="ml-4">Current project</strong>{" "}
+      <Line background="brand-alpha-strong" vert height="20" />
+      <Text marginRight="4" onBackground="brand-medium">
+        HandshakeNG
+      </Text>
+    </Row>
+  ),
+  href: "/work/handshakeng",
+},
   subline: (
     <>
-      I'm {person.firstName}, a {person.role.toLowerCase()} at{" "}
-      <Text as="span" size="xl" weight="strong">
-        ONCE UI
-      </Text>
-      , where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+      I'm {person.firstName}, a {person.role.toLowerCase()} in Lagos working with Next.js and
+      Flutter, with backend experience in Python and Django.
     </>
   ),
 };
@@ -107,10 +104,19 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        {person.firstName} is a {person.location.split("/")[1]?.replace("_", " ")}-based{" "}
-        {person.role.toLowerCase()} with a passion for transforming complex challenges into simple,
-        elegant design solutions. Their work spans digital interfaces, interactive experiences, and
-        the convergence of design and technology.
+        I'm a front-end developer and UI engineer in Lagos, working with Next.js and Flutter,
+        with backend experience in Python and Django. I take features from the screen all the
+        way to the database. I move fast, keep communication clear, and use AI tools to speed
+        things up while I review, test, and stand behind everything I ship.
+        <br />
+        <br />
+        I've shipped three products: HandshakeNG, a used-phone marketplace where I built the
+        front end and the backend endpoints; another e-commerce marketplace with its own API;
+        and a food discovery app built in Flutter.
+        <br />
+        <br />
+        Off the clock, I fly FPV drones and repair them when they crash. It's good practice
+        for staying calm and fixing things fast, which is most of software too.
       </>
     ),
   },

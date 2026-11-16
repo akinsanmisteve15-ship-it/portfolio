@@ -1,0 +1,42 @@
+---
+title: "HandshakeNG: A Trusted Marketplace for Used Phones"
+publishedAt: "2026-11-16"
+summary: "A used-device marketplace where every phone is inspected at a Checkpoint before it can be bought, built end to end with Django and PostgreSQL."
+images:
+  - "/images/projects/handshakeng/cover-01.jpg"
+  - "/images/projects/handshakeng/cover-02.jpg"
+  - "/images/projects/handshakeng/cover-03.jpg"
+team:
+  - name: "Akinsanmi Steven"
+    role: "Front-End and Backend Developer"
+    avatar: "/images/avatar.jpeg"
+    linkedIn: "https://www.linkedin.com/in/your-profile/"
+link: "https://computervillagelive.onrender.com/"
+---
+
+## Overview
+
+HandshakeNG is a marketplace for buying and selling used phones, tablets, laptops, and watches in Lagos. Its core idea is trust: every device is inspected at a Checkpoint before it can be bought, which tackles the biggest worry in secondhand buying. I built the front end and the backend, from the listing pages to the APIs behind them.
+
+## Key Features
+
+- **Checkpoint inspection**: Devices are checked at a Checkpoint before they can be bought, so buyers aren't gambling on a stranger's word.
+- **Browse and search**: Shoppers can browse by category and brand, search for a model, or request a model that isn't listed yet.
+- **IMEI checker**: [One sentence on what it verifies, e.g. whether a phone's IMEI is valid or flagged, and where the data comes from.]
+- **Live bidding**: [One sentence on how it works, e.g. buyers place bids on a listing and see updates as they come in.] Launching soon.
+- **Google sign-in**: Fast account creation without passwords to manage.
+
+## Technologies Used
+
+- **Django**: Backend, business logic, and server-rendered pages.
+- **PostgreSQL**: Database for users, listings, and bids.
+- **Cloudflare R2**: Image storage for banners and listing photos.
+- **Render**: Hosting for the live app.
+
+## Challenges and Learnings
+
+The hardest parts were live bidding and the IMEI checker. [What made live bidding tricky, e.g. keeping bids consistent when two people bid at the same moment, or pushing updates to every viewer.] [What made the IMEI checker tricky, e.g. validating the number, integrating an external source, or handling bad input.] [One thing you'd do differently or learned.]
+
+## Status
+
+Live and growing. The front end is being rebuilt in Next.js, and live bidding is on the way. The server sleeps when idle, so the first load may take a moment.
