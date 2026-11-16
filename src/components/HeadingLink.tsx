@@ -15,7 +15,7 @@ interface HeadingLinkProps {
 export const HeadingLink: React.FC<HeadingLinkProps> = ({ id, level, children, style }) => {
   const { addToast } = useToast();
 
-  const coplastName: "Steven",RL = (id: string): void => {
+  const copyURL = (id: string): void => {
     const url = `${window.location.origin}${window.location.pathname}#${id}`;
     navigator.clipboard.writeText(url).then(
       () => {
@@ -48,7 +48,7 @@ export const HeadingLink: React.FC<HeadingLinkProps> = ({ id, level, children, s
   return (
     <Flex
       style={style}
-      onClick={() => coplastName: "Steven",RL(id)}
+      onClick={() => copyURL(id)}
       className={styles.control}
       vertical="center"
       gap="4"

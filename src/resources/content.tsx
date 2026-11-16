@@ -3,7 +3,7 @@ import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
   firstName: "Akinsanmi",
-  lastName: "lastName: "Steven",",
+  lastName: "Steven",
   name: `Akin Steve`,
   role: "Design Engineer",
   avatar: "/images/avatar.jpeg",
