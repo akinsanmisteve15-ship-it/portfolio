@@ -110,9 +110,11 @@ const about: About = {
         things up while I review, test, and stand behind everything I ship.
         <br />
         <br />
-        I've shipped three products: HandshakeNG, a used-phone marketplace where I built the
-        front end and the backend endpoints; another e-commerce marketplace with its own API;
-        and a food discovery app built in Flutter.
+        I've shipped three products: HandshakeNG, a trusted used-device marketplace where I
+        built the front end and backend; HiredeyGo, a test-based hiring platform built with a
+        TechCrush cohort team, where I built the landing page, the shared components, the
+        front-end JavaScript, and the API integration; and a food discovery app in Flutter with
+        a Django backend.
         <br />
         <br />
         Off the clock, I fly FPV drones and repair them when they crash. It's good practice

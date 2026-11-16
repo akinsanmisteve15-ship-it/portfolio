@@ -22,20 +22,21 @@ HandshakeNG is a marketplace for buying and selling used phones, tablets, laptop
 
 - **Checkpoint inspection**: Devices are checked at a Checkpoint before they can be bought, so buyers aren't gambling on a stranger's word.
 - **Browse and search**: Shoppers can browse by category and brand, search for a model, or request a model that isn't listed yet.
-- **IMEI checker**: [One sentence on what it verifies, e.g. whether a phone's IMEI is valid or flagged, and where the data comes from.]
-- **Live bidding**: [One sentence on how it works, e.g. buyers place bids on a listing and see updates as they come in.] Launching soon.
+- **IMEI checker**: Verifies a phone's IMEI in three steps: it validates the number's format and checksum, looks it up against an external API or database, and confirms it matches the device listed for sale.
+- **Live bidding**: Bids are pushed to every viewer in real time over WebSockets using Django Channels. Launching soon.
 - **Google sign-in**: Fast account creation without passwords to manage.
 
 ## Technologies Used
 
 - **Django**: Backend, business logic, and server-rendered pages.
 - **PostgreSQL**: Database for users, listings, and bids.
+- **Django Channels and WebSockets**: Real-time bid updates without page refreshes.
 - **Cloudflare R2**: Image storage for banners and listing photos.
 - **Render**: Hosting for the live app.
 
 ## Challenges and Learnings
 
-The hardest parts were live bidding and the IMEI checker. [What made live bidding tricky, e.g. keeping bids consistent when two people bid at the same moment, or pushing updates to every viewer.] [What made the IMEI checker tricky, e.g. validating the number, integrating an external source, or handling bad input.] [One thing you'd do differently or learned.]
+The two most interesting pieces were the IMEI checker and live bidding. The IMEI checker had to combine three separate checks into one reliable result. [What made it tricky.] For live bidding, I used WebSockets through Django Channels so a new bid shows up for everyone instantly. [What made it tricky.]
 
 ## Status
 
